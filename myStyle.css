@@ -1,12 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
+:root {
+  --color-light: #f1e9e9;
+  --color-dark: #07070700;
+  --color-starbucks: #042214;
+  --color-container-one: #0e572c;
+  --starbucks-logo-width: 35px;
+  --starbucks-logo-height: 35px;
+  --line-height-container-one: 1.2;
+  --line-height-body: 1.3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Quicksand", sans-serif;
   width: 100%;
+  line-height: var(--line-height-body);
 }
 .logo_img {
-  width: 35px;
-  height: 35px;
+  width: var(--starbucks-logo-width);
+  height: var(--starbucks-logo-height);
   margin-left: 20px;
 }
 .section_one {
@@ -21,7 +38,7 @@ ul {
 }
 a {
   font-weight: bold;
-  color: rgb(26, 20, 20);
+  color: var(--color-starbucks);
   padding-right: 15px;
   text-decoration: none;
   text-transform: uppercase;
@@ -42,4 +59,14 @@ li {
   text-align: center;
   margin-top: 10px;
   justify-self: end;
+}
+.container_one {
+  background-color: var(--color-container-one);
+  line-height: var(--line-height-container-one);
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: var(--color-light);
+}
+.a-link-one {
+  color: var(--color-light);
 }

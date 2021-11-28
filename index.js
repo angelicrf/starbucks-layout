@@ -8,8 +8,11 @@ const changeLisColor = (thisClass, thisEvent, thisColor) => {
 };
 function changeBtnColors() {
   changeLisColor(".changeUl", "mouseover", "red");
+  changeLisColor(".changeUl", "mouseover", "red");
+  changeLisColor(".a-link-one", "mouseover", "red");
   changeLisColor(".changeUl", "mouseout", "black");
   changeLisColor(".signIn", "mouseout", "purple");
   changeLisColor(".signOut", "mouseout", "pink");
+  changeLisColor(".a-link-one", "mouseout", "white");
 }
 changeBtnColors();
