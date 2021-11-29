@@ -2,10 +2,11 @@
 
 :root {
   --color-light: #f1e9e9;
-  --color-dark: #07070700;
-  --color-starbucks: #042214;
+  --color-dark: #0c0c0c;
+  --color-starbucks: #000c07;
   --color-container-one: #0e572c;
   --color-container-two: #7a0b0b;
+  --color-buttons-hover: #d47e8c;
   --starbucks-logo-width: 35px;
   --starbucks-logo-height: 35px;
   --line-height-container-one: 1.2;
@@ -88,4 +89,16 @@ li {
 .secTop {
   margin-left: 7%;
   letter-spacing: 5px;
+}
+.secBut {
+  margin: 0 40%;
+  width: 32%;
+  border-radius: 45px;
+  color: var(--color-light);
+  border-color: var(--color-light);
+}
+.secBut:hover {
+  background-color: var(--color-buttons-hover);
+  border-color: var(--color-light);
+  box-shadow: none;
 }
