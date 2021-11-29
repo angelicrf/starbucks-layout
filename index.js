@@ -34,11 +34,14 @@ function changeBtnColors() {
   changeLisColor(".changeUl", "mouseover", "red");
   changeLisColor(".a-link-one", "mouseover", "red");
   changeLisColor(".secBut", "mouseover", "pink");
+  changeLisColor(".thirdBut", "mouseover", "pink");
   changeLisColor(".changeUl", "mouseout", "black");
   changeLisColor(".signIn", "mouseout", "purple");
   changeLisColor(".signOut", "mouseout", "pink");
   changeLisColor(".a-link-one", "mouseout", "white");
   changeLisColor(".secBut", "mouseout", "white");
+  changeLisColor(".thirdBut", "mouseout", "white");
 }
 changeBtnColors();
 buttonsMsg(".secBut", "second-container");
+buttonsMsg(".thirdBut", "third-container");
