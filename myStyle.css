@@ -5,6 +5,7 @@
   --color-dark: #07070700;
   --color-starbucks: #042214;
   --color-container-one: #0e572c;
+  --color-container-two: #7a0b0b;
   --starbucks-logo-width: 35px;
   --starbucks-logo-height: 35px;
   --line-height-container-one: 1.2;
@@ -19,6 +20,7 @@
 body {
   font-family: "Quicksand", sans-serif;
   width: 100%;
+  color: var(--color-light);
   line-height: var(--line-height-body);
 }
 .logo_img {
@@ -67,6 +69,23 @@ li {
   letter-spacing: 5px;
   color: var(--color-light);
 }
+.container_two {
+  background-color: var(--color-container-two);
+  line-height: var(--line-height-container-one);
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: var(--color-light);
+}
 .a-link-one {
   color: var(--color-light);
+}
+.secImg {
+  height: 600px;
+}
+.secText {
+  margin-left: 7%;
+}
+.secTop {
+  margin-left: 7%;
+  letter-spacing: 5px;
 }
