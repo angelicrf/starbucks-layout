@@ -17,7 +17,7 @@ const changeLisColor = (thisClass, thisEvent, thisColor) => {
         thisEvent == "mouseover" &&
         !isClicked
       ) {
-        event.target.style.borderColor = "white";
+        event.target.style.borderColor = "black";
         event.target.style.boxShadow = "none";
       }
     });
@@ -35,13 +35,25 @@ function changeBtnColors() {
   changeLisColor(".a-link-one", "mouseover", "red");
   changeLisColor(".secBut", "mouseover", "pink");
   changeLisColor(".thirdBut", "mouseover", "pink");
+  changeLisColor(".fourthBut", "mouseover", "pink");
+  changeLisColor(".fifthBut", "mouseover", "pink");
+  changeLisColor(".sixthBut", "mouseover", "black");
   changeLisColor(".changeUl", "mouseout", "black");
   changeLisColor(".signIn", "mouseout", "purple");
   changeLisColor(".signOut", "mouseout", "pink");
   changeLisColor(".a-link-one", "mouseout", "white");
   changeLisColor(".secBut", "mouseout", "white");
   changeLisColor(".thirdBut", "mouseout", "white");
+  changeLisColor(".fourthBut", "mouseout", "white");
+  changeLisColor(".fifthBut", "mouseout", "white");
+  changeLisColor(".sixthBut", "mouseout", "black");
+}
+function changeBtnBorders() {
+  buttonsMsg(".secBut", "second-container");
+  buttonsMsg(".thirdBut", "third-container");
+  buttonsMsg(".fourthBut", "fourth-container");
+  buttonsMsg(".fifthBut", "fifth-container");
+  buttonsMsg(".sixthBut", "sixth-container");
 }
 changeBtnColors();
-buttonsMsg(".secBut", "second-container");
-buttonsMsg(".thirdBut", "third-container");
+changeBtnBorders();

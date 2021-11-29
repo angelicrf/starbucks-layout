@@ -6,6 +6,7 @@
   --color-starbucks: #000c07;
   --color-container-one: #0e572c;
   --color-container-two: #7a0b0b;
+  --color-container-six: #ddf0dd;
   --color-buttons-hover: #d47e8c;
   --starbucks-logo-width: 4%;
   --starbucks-logo-height: 4%;
@@ -72,10 +73,12 @@ li {
   color: var(--color-light);
 }
 .container_two,
-.container_three {
+.container_three,
+.container_four,
+.container_five {
   background-color: var(--color-container-two);
   line-height: var(--line-height-container-one);
-  font-size: 26px;
+
   letter-spacing: 5px;
   color: var(--color-light);
 }
@@ -86,23 +89,31 @@ li {
   color: var(--color-dark);
   margin-left: -80%;
 }
-.secImg {
+.secImg,
+.fourthImg {
   height: 40rem;
 }
 .secText,
-.thirdText {
+.thirdText,
+.fourthText {
   padding: 5% 5%;
+  font-size: 26px;
 }
-.first_a_col {
+.first_a_col,
+.fourth_a_col,
+.fifth_a_col,
+.sixth_a_col {
   height: 400px;
   text-align: center;
 }
 .secTop,
-.thirdTop {
+.thirdTop,
+.fourthTop {
   letter-spacing: 5px;
   margin-left: 7%;
 }
-.secBut {
+.secBut,
+.fourthBut {
   margin: 0 38%;
   width: 32%;
   border-radius: 45px;
@@ -110,12 +121,16 @@ li {
   border-color: var(--color-light);
 }
 .secBut:hover,
-.thirdBut:hover {
+.thirdBut:hover,
+.fourthBut:hover,
+.fifthBut:hover,
+.sixthBut:hover {
   background-color: var(--color-buttons-hover);
   border-color: var(--color-light);
   box-shadow: none;
 }
-.thirdBut {
+.thirdBut,
+.fifthBut {
   margin: 0 30%;
   width: 32%;
   border-radius: 45px;
@@ -127,6 +142,61 @@ li {
   right: 0;
   margin-left: 30%;
 }
-.thirdAllTxt {
+.fifthImg {
+  height: 22rem;
+  width: 43rem;
+  right: 0;
+}
+.thirdAllTxt,
+.fifthAllTxt {
   margin-left: 5%;
+}
+.fifthText {
+  padding: 5% 5%;
+}
+.allSections {
+  width: 100%;
+}
+.sixthImg {
+  height: 30rem;
+  width: 50rem;
+}
+.sixthText {
+  padding: 5% 5%;
+  font-size: 18px;
+}
+.container_six {
+  background-color: var(--color-container-six);
+  line-height: var(--line-height-container-one);
+  letter-spacing: 3px;
+  color: var(--color-dark);
+}
+.sixthBut {
+  margin: 0 38%;
+  width: 32%;
+  border-radius: 45px;
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+.footer {
+  color: var(--color-dark);
+}
+.icon_img_1,
+.icon_img_2,
+.icon_img_3,
+.icon_img_4,
+.icon_img_5,
+.icon_img_6 {
+  width: 2%;
+  height: 2%;
+}
+hr {
+  color: var(--color-dark);
+  border-top: 2px solid var(--color-dark);
+}
+.footerUl {
+  margin-left: -2%;
+}
+.ft_sign {
+  margin-left: 1.2%;
 }
