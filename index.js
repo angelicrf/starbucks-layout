@@ -1,4 +1,10 @@
 let isClicked = false;
+const footerLisOne = document.querySelectorAll(".footer_col_1>li>a");
+const footerLisTwo = document.querySelectorAll(".footer_col_2>li>a");
+const footerLisThree = document.querySelectorAll(".footer_col_3>li>a");
+const footerLisFour = document.querySelectorAll(".footer_col_4>li>a");
+const footerLisFive = document.querySelectorAll(".footer_col_5>li>a");
+var rf = [];
 const changeLisColor = (thisClass, thisEvent, thisColor) => {
   document.querySelectorAll(thisClass).forEach((item) => {
     item.addEventListener(thisEvent, function (event) {
@@ -29,6 +35,30 @@ const buttonsMsg = (thisClass, thisMsg) => {
     console.log(`the btn ${thisMsg} is clicked`);
   });
 };
+const addClassesToLis = (thisClass) => {
+  thisClass.forEach((thisList) => {
+    thisList.classList.add("newClass");
+  });
+};
+function loopOnNewClass(thisIndex) {
+  rf = document.getElementsByClassName("newClass");
+  for (let index = 0; index < rf.length; index++) {
+    rf[thisIndex].style.color = "red";
+  }
+  rf.length = 0;
+}
+function callFooterLis() {
+  addClassesToLis(footerLisOne);
+  loopOnNewClass(0);
+  addClassesToLis(footerLisTwo);
+  loopOnNewClass(6);
+  addClassesToLis(footerLisThree);
+  loopOnNewClass(13);
+  addClassesToLis(footerLisFour);
+  loopOnNewClass(17);
+  addClassesToLis(footerLisFive);
+  loopOnNewClass(21);
+}
 function changeBtnColors() {
   changeLisColor(".changeUl", "mouseover", "red");
   changeLisColor(".changeUl", "mouseover", "red");
@@ -57,3 +87,4 @@ function changeBtnBorders() {
 }
 changeBtnColors();
 changeBtnBorders();
+callFooterLis();

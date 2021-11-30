@@ -8,6 +8,7 @@
   --color-container-two: #7a0b0b;
   --color-container-six: #ddf0dd;
   --color-buttons-hover: #d47e8c;
+  --color-footer-menu: #4ab66e;
   --starbucks-logo-width: 4%;
   --starbucks-logo-height: 4%;
   --line-height-container-one: 1.2;
@@ -199,4 +200,16 @@ hr {
 }
 .ft_sign {
   margin-left: 1.2%;
+}
+.ft_li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.ft_a {
+  text-transform: none;
+  font-size: 18px;
+  color: var(--color-footer-menu);
+  /* text-shadow: 0.5px 0.5px #000c07; */
 }
