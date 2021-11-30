@@ -4,7 +4,11 @@ const footerLisTwo = document.querySelectorAll(".footer_col_2>li>a");
 const footerLisThree = document.querySelectorAll(".footer_col_3>li>a");
 const footerLisFour = document.querySelectorAll(".footer_col_4>li>a");
 const footerLisFive = document.querySelectorAll(".footer_col_5>li>a");
-var rf = [];
+var rf,
+  df,
+  gf,
+  hf,
+  jf = [];
 const changeLisColor = (thisClass, thisEvent, thisColor) => {
   document.querySelectorAll(thisClass).forEach((item) => {
     item.addEventListener(thisEvent, function (event) {
@@ -35,29 +39,34 @@ const buttonsMsg = (thisClass, thisMsg) => {
     console.log(`the btn ${thisMsg} is clicked`);
   });
 };
-const addClassesToLis = (thisClass) => {
+const addClassesToLis = (thisClass, newClass) => {
   thisClass.forEach((thisList) => {
-    thisList.classList.add("newClass");
+    thisList.classList.add(newClass);
   });
 };
-function loopOnNewClass(thisIndex) {
-  rf = document.getElementsByClassName("newClass");
-  for (let index = 0; index < rf.length; index++) {
-    rf[thisIndex].style.color = "red";
+function loopOnNewClass(thisIndex, thisArray, thisNewClass, thisColor) {
+  thisArray = document.getElementsByClassName(thisNewClass);
+  console.log(thisArray);
+  for (let index = 0; index < thisArray.length; index++) {
+    thisArray[thisIndex].style.color = thisColor;
   }
-  rf.length = 0;
+  if (thisArray) {
+    if (thisArray.length > 0) {
+      thisArray.length = 0;
+    }
+  }
 }
 function callFooterLis() {
-  addClassesToLis(footerLisOne);
-  loopOnNewClass(0);
-  addClassesToLis(footerLisTwo);
-  loopOnNewClass(6);
-  addClassesToLis(footerLisThree);
-  loopOnNewClass(13);
-  addClassesToLis(footerLisFour);
-  loopOnNewClass(17);
-  addClassesToLis(footerLisFive);
-  loopOnNewClass(21);
+  addClassesToLis(footerLisOne, "newClassOne");
+  loopOnNewClass(0, rf, "newClassOne", "red");
+  addClassesToLis(footerLisTwo, "newClassTwo");
+  loopOnNewClass(0, df, "newClassTwo", "blue");
+  addClassesToLis(footerLisThree, "newClassThree");
+  loopOnNewClass(0, gf, "newClassThree", "green");
+  addClassesToLis(footerLisFour, "newClassFour");
+  loopOnNewClass(0, hf, "newClassFour", "purple");
+  addClassesToLis(footerLisFive, "newClassFive");
+  loopOnNewClass(0, jf, "newClassFive", "lime");
 }
 function changeBtnColors() {
   changeLisColor(".changeUl", "mouseover", "red");
