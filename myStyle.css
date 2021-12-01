@@ -11,6 +11,12 @@
   --color-footer-menu: #4ab66e;
   --starbucks-logo-width: 4%;
   --starbucks-logo-height: 4%;
+  --starbucks-mobile-logo-width: 14%;
+  --starbucks-mobile-logo-height: 14%;
+  --starbucks-mb-marker-width: 14%;
+  --starbucks-mb-marker-height: 14%;
+  --starbucks-mb-social-width: 8%;
+  --starbucks-mb-social-height: 8%;
   --line-height-container-one: 1.2;
   --line-height-body: 1.3;
 }
@@ -212,4 +218,237 @@ hr {
   font-size: 18px;
   color: var(--color-footer-menu);
   /* text-shadow: 0.5px 0.5px #000c07; */
+}
+.section_three {
+  display: none;
+}
+.dropdown_menu {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+  .logo_img {
+    width: var(--starbucks-mobile-logo-width);
+    height: var(--starbucks-mobile-logo-height);
+    margin-left: 1.5%;
+    display: inline-block;
+  }
+  col {
+    width: 100%;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  .section_one {
+    display: none;
+  }
+  .section_two {
+    display: none;
+  }
+  .section_three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7a0b0b;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-right: 3%;
+    line-height: 0.7;
+  }
+  .menu-icon {
+    margin-bottom: 9px;
+    display: grid;
+    place-items: center;
+    height: 55px;
+    width: 50px;
+    cursor: pointer;
+  }
+  .hamburger_line {
+    width: 35px;
+    height: 2px;
+    background: #f0e6e6;
+    display: block;
+  }
+  .hm_1 {
+    margin-top: 8px;
+  }
+  .secThreeCopy {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #7a0b0b;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-right: 3%;
+    line-height: 0.7;
+  }
+  .mnIconCopy {
+    margin-bottom: 9px;
+    display: grid;
+    place-items: center;
+    height: 55px;
+    width: 50px;
+    cursor: pointer;
+  }
+  .hmLinecopy {
+    width: 35px;
+    height: 2px;
+    background: #f0e6e6;
+    display: block;
+  }
+  .hm_1_copy {
+    margin-top: 4px;
+  }
+  .dropdown_menu {
+    width: 250px;
+    padding-bottom: 10px;
+    background-color: #4ab66e;
+    margin-right: 4px;
+    right: 0;
+    float: right;
+    position: fixed;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    -webkit-transition: 2s;
+  }
+  .dropdown_menu:hover {
+    background-color: var(--color-light);
+  }
+  .dropdown_menu a {
+    color: #b35757;
+    display: block;
+    list-style-type: none;
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #ddf0dd;
+    font-weight: bold;
+  }
+  .marker_logo {
+    display: flex;
+  }
+  .marker_img {
+    width: var(--starbucks-mb-marker-width);
+    height: var(--starbucks-mb-marker-height);
+    padding-left: 7px;
+  }
+  .div_menu_btn {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .frt_menu_btn {
+    color: var(--color-dark);
+    width: 100px;
+  }
+  .sec_menu_btn {
+    color: var(--color-light);
+    width: 100px;
+  }
+  .marker_txt {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: var(--color-dark);
+    font-weight: bold;
+  }
+  .container_one {
+    background-color: var(--color-container-one);
+    line-height: var(--line-height-container-one);
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: var(--color-light);
+    width: 100%;
+  }
+  .container_two,
+  .container_three,
+  .container_four,
+  .container_five {
+    background-color: var(--color-container-two);
+    line-height: var(--line-height-container-one);
+
+    letter-spacing: 5px;
+    color: var(--color-light);
+    width: 100%;
+  }
+  .secImg {
+    width: 100%;
+  }
+  .mb_container_two,
+  .mb_container_four {
+    display: block;
+  }
+  .secText,
+  .thirdText,
+  .fourthText {
+    font-size: 20px;
+  }
+  .thirdImg,
+  .fourthImg {
+    height: 40rem;
+    width: 100%;
+    margin-left: -10px;
+  }
+
+  .fifthBut {
+    margin-left: 25%;
+    margin-bottom: 15px;
+    width: 52%;
+    border-radius: 35px;
+    color: var(--color-light);
+    border-color: var(--color-light);
+  }
+  .fifthImg {
+    height: 20rem;
+    width: 100%;
+    margin-left: -10px;
+  }
+  .sixthImg {
+    height: 20rem;
+    width: 100%;
+  }
+  .sixthTop {
+    margin-left: 5px;
+    padding: 15px 15px;
+  }
+  .sixthBut {
+    margin-left: 35%;
+    margin-top: -10px;
+    width: 32%;
+    border-radius: 45px;
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+  }
+  .mb_footer {
+    display: none;
+  }
+  .icon_img_1 {
+    width: var(--starbucks-mb-social-width);
+    height: var(--starbucks-mb-social-height);
+  }
+  .icon_img_2,
+  .icon_img_3,
+  .icon_img_4,
+  .icon_img_5,
+  .icon_img_6 {
+    width: var(--starbucks-mb-social-width);
+    height: var(--starbucks-mb-social-height);
+    margin-left: -5px;
+  }
+  .footerUl,
+  .mbf_hr {
+    display: none;
+  }
+  .ft_sign {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 12px;
+  }
+  .allSections {
+    width: 100%;
+  }
 }
